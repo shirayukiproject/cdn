@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 	<head>
-    <title>Shirayuki Project | شيرايوکي ڤروجيک</title>
+    <title>Projek Shirayuki | ڤروجيک شيرايوکي</title>
       <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-193125731-1'/>
 <script>
@@ -12,7 +12,6 @@
 
   gtag(&#39;config&#39;, &#39;UA-193125731-1&#39;);
 </script>
-
     <!-- Meta Umum -->
 	<meta expr:charset='data:blog.encoding'/>
 	<meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
@@ -109,7 +108,6 @@
 	</script>
     <b:skin><![CDATA[  
 /** <!-- Variable definitions -->
-@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
 <Group description="Komentar Baru Blogger (Contempo, Soho, Emporio, Notable)">
  <Variable name="body.background" description="Body Background" type="background" color="#dddfe2" default="#dddfe2 none repeat scroll top left" value="#dddfe2 none repeat scroll top left"/>
  <Variable name="body.font" description="Font" type="font" default="normal 400 14px Roboto, Arial, sans-serif" value="normal 400 14px Roboto, Arial, sans-serif"/>
@@ -184,8 +182,9 @@
 * Modified  : Modified by Niskala5570 for Shirayuki Project Fansub
 * Version   : Yuki 4.0
 **************************************************/
+@import url('https://rawcdn.githack.com/shirayukiproject/website/376edaab3ef7a99bd7491e79e3847ac327f3ecb9/PasuanJawi.css');
 body {font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Noto Kufi Arabic,sans-serif;margin:0}
-.ff {font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}
+.ff {font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Noto Kufi Arabic,sans-serif}
 a {color: rgb(133,150,165);text-decoration: none}
 a:hover {color: rgb(61,180,242)}
 img {max-width: 100%;height: auto}
@@ -197,7 +196,7 @@ img {max-width: 100%;height: auto}
 .text-bc {color: #bcbedc}
 .text-center,.related-post-item {text-align: center}
 .bg {background: rgb(229,235,241)}
-.bg-2b {background: #2b2d42}
+.bg-2b {background: #152232}
 .bg-100 {background: rgb(251,251,251)}
 .bg-200 {background: rgb(229,235,241)}
 .bg-200h:hover {background: rgba(229,235,241,.6)}
@@ -370,7 +369,6 @@ details:last-child{border-bottom: none}
 summary {margin: -.5em -.5em 0;padding: .5em}
 details[open] {padding: .5em;cursor: default}
 details[open] summary {border-bottom: 1px solid #aaa;margin-bottom: .5em}
-.logo {font-size: 45px;font-weight: 750;text-transform: uppercase;font-family: Arial}
 .hfeed {grid-template-columns: repeat(auto-fill,minmax(150px,1fr));justify-content: center}
 @media (min-width: 1025px) {
 .pa-md {position: absolute}
@@ -499,6 +497,7 @@ border-radius: 4px;}
 [data="Sci-Fi"]{color:hsl(335,49%,28%);background:hsl(336,89%,82%)}
 [data="School Life"]{color:hsl(90,53%,94%);background:hsl(47,67%,44%)}
 [data="Samurai"] {color:hsl(47,44%,92%);background:hsl(0,53%,58%)}
+[data="Jawi"] {color:hsl(47,44%,92%);background:hsl(0,53%,58%)}
 [data="Seinen"]{color:hsl(12,14%,93%);background:hsl(360,85%,56%)}
 [data="Shounen"]{color: hsl(0,4%,95%);background:hsl(353,7%,26%)}
 [data="Thriller"]{color:hsl(356,100%,97%);background:hsl(349,71%,45%)}
@@ -653,7 +652,7 @@ border-radius: 4px;}
 .list-entries a {flex: 2;text-align: center}
 .list-entries p {flex: 1;padding: 3px 5px;background: linear-gradient(90deg, rgb(10, 95, 152) 0%, rgb(23, 123, 176) 37%, rgb(44, 169, 215) 100%);justify-content: center;border-radius: 3px;margin-top: 2px;margin-bottom: 2px;}
 .dark .list-entries p {color: rgb(213, 213, 213);background: linear-gradient(90deg, rgb(45, 59, 96) 0%, rgb(10, 82, 128) 37%, rgb(19, 103, 149) 100%);}
-.dark .list-entries h3 {color: white;background: repeating-linear-gradient(-45deg,#36bdea 0,#094f7d 74%,#4d5260 0,#2f2f2f 100%);}
+.dark .list-entries h3 {color: white;background: repeating-linear-gradient(-50deg,#36bdea 0,#094f7d 74%,#2979ff 0,#292a73 100%);}
 @media (max-width: 460px){.list-entries li{display: flex;flex-direction: column}
 .list-entries a{padding: 10px}
 .list-entries p{text-align: center}}
@@ -664,6 +663,21 @@ border-radius: 4px;}
 .batch ul {padding: 0;list-style: none;font-size: .9rem}
 .batch a {padding: 5px 10px;background: rgb(116,136,153);border-radius: 3px;color: white}
 .batch a:hover {filter: hue-rotate(50deg)}
+
+/* Logo Mod Gelap */
+.logo img { display: none; }
+.logo img.light { display: inline-block; }
+.dark .logo img { display: none; }
+.dark .logo img.dark { display: inline-block; }
+
+/* Menu Mod Gelap */
+.menu-rumijawi span { display: none; }
+.menu-rumijawi span.rumi { display: inline-block; }
+.dark .menu-rumijawi span { display: none; }
+.dark .menu-rumijawi span.jawi { display: inline-block; }
+
+/* Keluarga Fon */
+.jawi { font-family: Noto Kufi Arabic, Roboto; }
 
       ]]></b:skin>
     <b:template-skin>
@@ -716,7 +730,8 @@ body#layout #aside {max-width: 340px}
   <nav class='app-grid app-gta-sm mw-lg m-auto flex w-full app-pl-30 app-pr-30 jc-sb'>
     <div class='ga-1 flex item-center'>
       <a class='logo flex' expr:href='data:blog.homepageUrl'>
-        <img alt='Shirayuki Project' src='https://blogger.googleusercontent.com/img/a/AVvXsEj7_Cqldmua8Hi8_cBaccVmEhE7cZ-PnmEDuovxSpmk6z-zUnEA17Q4FpPz9mpewL9SATGwNSldtxHNQUOlUrRd2SDAuxdzfMeYOFakDumRAwggQjEFc41gmsdEaCH20JSctc8nFTZI_WddnMQNCXzWRvsfOTARjoJDlylyNHatgGNm6G7w1yYSPbPOhw' style='width:165px'/>
+        <img alt='Projek Shirayuki' class='light' src='https://blogger.googleusercontent.com/img/a/AVvXsEj7_Cqldmua8Hi8_cBaccVmEhE7cZ-PnmEDuovxSpmk6z-zUnEA17Q4FpPz9mpewL9SATGwNSldtxHNQUOlUrRd2SDAuxdzfMeYOFakDumRAwggQjEFc41gmsdEaCH20JSctc8nFTZI_WddnMQNCXzWRvsfOTARjoJDlylyNHatgGNm6G7w1yYSPbPOhw' style='width:165px'/>
+		<img alt='ڤروجيک شيرايوکي' class='dark' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7vzO_ssYEDYPz3_bjf2OfQ6vg51ab3VSuw1gV4b51GxkWGEC00h32QmxcMWIkjK11swFSTd42fjK-_Tf08xlQJQqJNuX7tOy5XSIfR9_RZvCar3OIWb1t9UHQvyDb0S-XUUTQn_bdyXGe7RAagH4c_-lozeTszeSjAe6Q8UqV-LO_GRBfPyPcVVJosg/s1600/Jawi1.png' style='width:250px'/>
       </a>
   </div>
     <div class='ga-2 jcl w-full item-center flex content-center tt-cap'>
@@ -724,23 +739,23 @@ body#layout #aside {max-width: 340px}
       <label class='menu-icon cp pb-15 pt-15 pr-67' for='menu-btn'><svg style='width:34px;height:34px;' viewBox='0 0 24 24'>
         <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' fill='currentColor'/></svg>
       </label>
-      <section class='menu bg-100-sm bc-152-sm flex'>
-        <a class='p-y18x16 c-d3 grid ji-c' href='https://tapawsub.animemalay.net'>
-        <span fs='fs-09'>Tapawsub</span><span class='fs-07'>Sumber Inspirasi!</span></a>
-        <a class='p-y18x16 c-d3 grid ji-c' href='https://www.youtube.com/channel/UC8I6E03SVRqPgAnrlrQfoYg'>
-        <span fs='fs-09'>Muse Malaysia</span><span class='fs-07'>Terpaling Power!</span></a>
-        <a class='p-y18x16 c-d3 grid ji-c' href='https://discord.gg/3rgRVredd7' https:='' invite=''>
-        <span fs='fs-09'>Discord</span><span class='fs-07'>Moh Borok!</span></a>
-        <a class='p-y18x16 c-d3 grid ji-c' href='https://github.com/shirayukiproject/shirayuki_translation'>
-        <span fs='fs-09'>Kod Sumber</span><span class='fs-07'>Skrip ASS!</span></a>
-      </section>
-  </div>
+          <section class='menu menu-rumijawi bg-100-sm bc-152-sm flex'>
+            <a class='p-y18x16 c-d3 grid ji-c' href='https://tapawsub.com'>
+            <span class='rumi' fs='fs-09'>Tapawsub</span><span class='fs-07 rumi'>Sumber Inspirasi!</span><span class='jawi' fs='fs-09'>تاڤاوسب</span><span class='fs-07 jawi' dir='rtl'>سومبر اينسڤيراسي!</span></a>
+            <a class='p-y18x16 c-d3 grid ji-c' href='https://shirayukiproject.github.io/pedoman'>
+            <span class='rumi' fs='fs-09'>Pedoman Shirayuki</span><span class='fs-07 rumi'>Sumber Rujukan Anda!</span><span class='jawi' fs='fs-09'>ڤدومن شيرايوکي</span><span class='fs-07 jawi' dir='rtl'>سومبر روجوعن اندا!</span></a>
+            <a class='p-y18x16 c-d3 grid ji-c' href='https://discord.gg/3JKbgVb'>
+            <span class='rumi' fs='fs-09'>Discord</span><span class='fs-07 rumi'>Moh Borok!</span><span class='jawi' fs='fs-09'>ديسکورد</span><span class='fs-07 jawi' dir='rtl'>موه بوروق!</span></a>
+            <a class='p-y18x16 c-d3 grid ji-c' href='https://github.com/shirayukiproject/shirayuki_translation'>
+            <span class='rumi' fs='fs-09'>Fail Sari Kata</span><span class='fs-07 rumi'>Sumber Terbuka!</span><span class='jawi' fs='fs-09'>فاٴيل ساري کات</span><span class='fs-07 jawi' dir='rtl'>سومبر تربوک!</span></a>
+          </section>
+  		</div>
     <div class='ga-3 flex item-center'>
     <a class='c-d3 p-y18x16' expr:href='data:blog.homepageUrl + &quot;search&quot;'>
       <svg class='svg-hide' style='width:24px;height:24px;' viewBox='0 0 24 24'>
 <path d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z' fill='currentColor'/>
   </svg>
-      <div class='app-dn'>CARI </div>
+      <div class='app-dn menu-rumijawi'><span class='rumi'>CARI </span><span class='jawi'>چاري </span></div>
     </a>
     <div class='theme flex'>
 <label class='switch'>
@@ -888,9 +903,9 @@ body#layout #aside {max-width: 340px}
   </b:widget>
 </b:section>
 <b:section class='ml-a mr-a mw-xl' id='pengumuman' showaddelement='false'>
-  <b:widget cond='data:view.isHomepage' id='Text1' locked='true' title='Pengumuman' type='Text' version='2' visible='false'>
+  <b:widget cond='data:view.isHomepage' id='Text1' locked='true' title='Pengumuman' type='Text' version='2' visible='true'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div>Laman web ini masih lagi di dalam pembangunan.</div><div> Akan datang:</div><div><span =""="" style="color:#31b5e1;">++</span> Perbanyakkan lagi anime</div><div>Sungguhpun begitu, amatlah disarankan untuk anda tengok di Muse Malaysia jika tersedia.</div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div><b>Atas kesibukan di alam nyata, Projek Shirayuki ditangguhkan.</b> </div><div><span =""="" style="color:#31b5e1;">++</span> Shirayuki telah menghentikan sokongan 720p dan ke bawah, hanya 1080p selepas ini.<b>[8.4.2022]</b></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
        <b:class name='app-pl-20 app-pr-20 app-pt-20'/>  
@@ -918,7 +933,6 @@ body#layout #aside {max-width: 340px}
       <b:widget-setting name='commentLabel'/>
       <b:widget-setting name='showShareButtons'>false</b:widget-setting>
       <b:widget-setting name='authorLabel'>Admin</b:widget-setting>
-      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
       <b:widget-setting name='timestampLabel'>Tanggal</b:widget-setting>
       <b:widget-setting name='reactionsLabel'/>
@@ -1338,6 +1352,8 @@ Cukup rumit namun seru, Genre Psychological adalah kategori anime yang mencerita
 Genre Sci-Fi atau yang memiliki sinonim yaitu fiksi ilmiah adalah kategori anime yang menceritakan tentang dimana karakter anime sudah berada di dunia masa depan dengan semua yang telah menjadi canggih seperti mobil yang sudah bisa terbang, robot canggih, ataupun senjata laser dan super mematikan. Berikut rekomendasi anime Sci-Fi terbaik.
           <b:elseif cond='data:view.search.label in [&quot;Samurai&quot;]'/>
 Samurai adalah mereka yang mengikuti bushido, yaitu cara hidup prajurit Jepang klasik. Fokus genre ini pada tokoh utama yang memakai pedang samurai atau cara hidup seperti samurai. Kalau disertai genre action maka sang tokoh utamanya bertempur dengan pedang samurai.          
+          <b:elseif cond='data:view.search.label in [&quot;Jawi&quot;]'/>
+ترسدياڽ ساري کات جاوي.          
           <b:elseif cond='data:view.search.label in [&quot;Reincarnation&quot;]'/>
 Reinkarnasi adalah konsep tentang seseorang yang melanjutkan hidupnya atau terlahir kembali setelah mati yang masih dalam satu universe. Berbeda dengan isekai yang pemain utamanya pindah ke dunia lain / paralel universe.      
           <b:elseif cond='data:view.search.label in [&quot;Mecha&quot;]'/>
@@ -1373,7 +1389,7 @@ Sudah dipastikan, Genre Vampire akan selalu berkolaborasi dengan Genre Action. V
           <b:elseif cond='data:view.search.label in [&quot;Demon&quot;]'/>
 Mirip seperti Vampire, Genre Demons adalah kategori anime yang ceritanya berisikan mahluk-mahluk seperti Monster dan Iblis. Berikut 12+ rekomendasi anime Demons terbaik.
           <b:elseif cond='data:view.search.label in [&quot;Magic&quot;]'/>
-Mirip dengan Genre Fantasy, genre Magic adalah kategori anime yang akan menceritakan bahwa anime itu hanya akan berfokus pada hal-hal sihir dan bahkan anime yang menceritakan dunia dimana dunia yang penuh dengan penyihir dan berbagai ilmu sihirnya.
+Sama dengan genre Fantasy(Khayalan), genre Magic(Sihir) adalah anime yang menceritakan perkara sihir dan menceritakan dunia yang penuh dengan penyihir dan berbagai ilmu sihirnya.
           <b:elseif cond='data:view.search.label in [&quot;Military&quot;]'/>
 Terkait dengan Genre Police, Military adalah Genre anime yang menceritakan tentang perang yang orang-orangnya adalah tentara Militer dengan pasukan yang banyak, senjata, dan tank. Biasanya juga Genre Military menceritakan tentang pertarungan antara 2 pihak.
           <b:elseif cond='data:view.search.label in [&quot;Manga&quot;]'/>
@@ -1667,7 +1683,7 @@ Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/
   <span class='lh-2 app-label'>
     <b:class cond='data:view.isSingleItem' name='grid'/>
     <b:loop index='i' values='data:post.labels' var='label'>
-      <b:if cond='data:label.name in [&quot;Action&quot;, &quot;Adventure&quot;, &quot;Comedy&quot;, &quot;Drama&quot;, &quot;Ecchi&quot;, &quot;Fantasy&quot;, &quot;Harem&quot;, &quot;Historical&quot;, &quot;Horror&quot;, &quot;Isekai&quot;, &quot;Magic&quot;, &quot;Martial Arts&quot;, &quot;Mecha&quot;, &quot;Mystery&quot;, &quot;Psychological&quot;, &quot;Reincarnation&quot;, &quot;Romance&quot;, &quot;Samurai&quot;, &quot;School Life&quot;, &quot;Sci-Fi&quot;, &quot;Seinen&quot;, &quot;Shounen&quot;, &quot;Slice of Life&quot;, &quot;Sport&quot;, &quot;Supernatural&quot;, &quot;Thriller&quot;, &quot;Music&quot;, &quot;Demon&quot;, &quot;Game&quot;, &quot;Josei&quot;, &quot;Vampire&quot;, &quot;Military&quot;]'>
+      <b:if cond='data:label.name in [&quot;Action&quot;, &quot;Adventure&quot;, &quot;Comedy&quot;, &quot;Drama&quot;, &quot;Ecchi&quot;, &quot;Fantasy&quot;, &quot;Harem&quot;, &quot;Historical&quot;, &quot;Horror&quot;, &quot;Isekai&quot;, &quot;Magic&quot;, &quot;Martial Arts&quot;, &quot;Mecha&quot;, &quot;Mystery&quot;, &quot;Psychological&quot;, &quot;Reincarnation&quot;, &quot;Romance&quot;, &quot;Samurai&quot;, &quot;Jawi&quot;, &quot;School Life&quot;, &quot;Sci-Fi&quot;, &quot;Seinen&quot;, &quot;Shounen&quot;, &quot;Slice of Life&quot;, &quot;Sport&quot;, &quot;Supernatural&quot;, &quot;Thriller&quot;, &quot;Music&quot;, &quot;Demon&quot;, &quot;Game&quot;, &quot;Josei&quot;, &quot;Vampire&quot;, &quot;Military&quot;]'>
       <a class='i-block-th' expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
         <b:class cond='data:view.isMultipleItems' name='lh-1d2 p-y0x10 r10 mr-8 ttl fs-08'/>
         <data:label.name/>
@@ -1822,7 +1838,7 @@ Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/
         <div class='fs-08 c-g800 c-114 flex item-center'><data:post.author.name/></div>
       </div>
         <div class='pb-15'>
-        <div class='fs-09 pb-5 c-159'>Tarikh Post</div>
+        <div class='fs-09 pb-5 c-159'>Tarikh Dipos</div>
         <div class='fs-08 c-g800 c-114'><data:post.date/></div>
       </div>
         <div class='pb-15'>
@@ -1857,7 +1873,7 @@ Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/
     </div>
     </b:if>
     <b:tag class='ga-2 r4-tr' cond='data:view.isPost' name='div'>
-    <h1 class='tce'>
+    <h1 class='tce jawi'>
       <b:class cond='data:view.isPost' name='fw-n fs-1d3 c-159'/>
       <b:class cond='data:view.isMultipleItems' name='mb-8-l m-0 w-185-c'/>
       <b:class cond='data:view.isPage' name='m-y20x22 fs-1d3 fw-n c-159'/>
@@ -1943,21 +1959,7 @@ var randomRelatedIndex,startRelated;!function(a,b,c){var d={callBack:function(){
     <b:includable id='tabNav'>
 	<div class='tab-content' id='tab-2'>
 		<b:if cond='data:view.isSingleItem'>
-          <!--
-<div id='disqus_thread'/>
-<script type='text/javascript'>//<![CDATA[
-// Ad Block
-(function($){
-    setInterval(() => {
-        $.each($('iframe'), (arr,x) => {
-            let src = $(x).attr('src');
-            if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
-                $(x).remove();
-            }
-        });
-    }, 300);
-})(jQuery);
-//]]></script>
+<!--<div id='disqus_thread'/>
 <script>
 var disqus_shortname = &#39;shirayukiproject&#39;;
 var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
@@ -1975,8 +1977,9 @@ var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
   bloggerjs.src = '//'+disqus_shortname+'.disqus.com/blogger_item.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
 })();
-//]]> </script>
--->
+//]]> 
+</script>-->
+
 </b:if>
 	</div>
 	<div class='tab-content' id='tab-3'>
@@ -2070,11 +2073,15 @@ var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
   <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;div class=&quot;bg-100 c-g600 bc-213 r4 p-20 fs-09 lh-2 box-3 bsn&quot; style=&quot;padding-top: 20px;&quot; data-metatip=&quot;true&quot;&gt;
-&lt;p style=&quot;margin-top: 1px;&quot;&gt;&lt;a href=&quot;https://kitsu.io/anime/mekaku-city-actors&quot;&gt;[BD] Mekakucity Actors (Kagerou Daze)&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-top: 1px;&quot;&gt;&lt;a href=&quot;http://anon.to/?https://anidb.net/anime/10360&quot;&gt;[BD] Mekakucity Actors (Kagerou Daze)&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&quot;background-color:transparent; border-radius:4px&quot;&gt;
-&lt;div class=&quot;skills fs-07&quot; style=&quot;width:10%; color:white; padding-left:5px; background-color:#c5cc2d;&quot;&gt;DALAM PEMBIKINAN&lt;/div&gt;
+&lt;div class=&quot;skills fs-07&quot; style=&quot;width:10%; color:white; padding-left:5px; background-color:#c5cc2d;&quot;&gt;TERTANGGUH&lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://kitsu.io/anime/mekaku-city-actors&quot;&gt;[www] Seirei Gensouki (Kronikal Atma)&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-top: 1px;&quot;&gt;&lt;a href=&quot;http://anon.to/?https://anidb.net/anime/6262&quot;&gt;[DVD/BD] Touhou Niji Sousaku&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;background-color:transparent; border-radius:4px&quot;&gt;
+&lt;div class=&quot;skills fs-07&quot; style=&quot;width:10%; color:white; padding-left:5px; background-color:#c5cc2d;&quot;&gt;TERTANGGUH&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://anon.to/?https://kitsu.io/anime/mekaku-city-actors&quot;&gt;[www] Seirei Gensouki (Kronikal Atma)&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&quot;background-color:transparent; border-radius:4px&quot;&gt;
 &lt;div class=&quot;skills fs-07&quot; style=&quot;width: 98.5%; color: white; padding-left: 5px; background-color: rgb(52, 136, 21); padding-right: 0px;&quot;&gt; 12/12 SELESAI&lt;/div&gt;
 &lt;/div&gt;
@@ -2407,18 +2414,18 @@ var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
 <footer class='bg-111 p-y50x30 mt-60 c-a0 fw-600 ff lh-1d2'>
   <div class='mw-xl m-auto pl-50 pr-50 flex-md jcc-md grid-md gg-20-md'>
   <div class='jcc-md grid-md tac-md'>
- <div class='m-10'>Hak cipta &#169; <script>document.write(new Date().getFullYear())</script> <data:blog.title/> ツ<br/></div>
- <div class='m-10'>Reka bentuk gempak: <a href='https://emissionhex.blogspot.com/'>EmissionHex</a></div>
- <div class='m-10'>Diubah suai oleh Niskala(Kazuki278)</div>
+ <div class='m-10'>&#169; <data:blog.title/> ツ <script>document.write(new Date().getFullYear())</script></div>
+ <div class='m-10'>Rekaan Gempak: <a href='https://emissionhex.blogspot.com/'>EmissionHex</a></div>
+ <div class='m-10'>Dikuasakan oleh Blogger</div>
   </div>
   <b:section class='footer mla-md flex-md' id='footer' showaddelement='yes'>
     <b:widget id='LinkList1' locked='false' title='Partner Link' type='LinkList' version='2' visible='true'>
       <b:widget-settings>
         <b:widget-setting name='sorting'>NONE</b:widget-setting>
         <b:widget-setting name='text-1'>BossqueScans</b:widget-setting>
-        <b:widget-setting name='link-1'>https://bossquescans.blogspot.com/</b:widget-setting>
+        <b:widget-setting name='link-1'>https://bato.to/group/18464/</b:widget-setting>
         <b:widget-setting name='text-0'>Tapawsub</b:widget-setting>
-        <b:widget-setting name='link-0'>https://tapawsub.animemalay.net</b:widget-setting>
+        <b:widget-setting name='link-0'>https://tapawsub.com</b:widget-setting>
       </b:widget-settings>
       <b:includable id='main'>
   <b:include name='content'/>
@@ -2435,9 +2442,9 @@ var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
       <b:widget-settings>
         <b:widget-setting name='sorting'>NONE</b:widget-setting>
         <b:widget-setting name='text-1'>Github</b:widget-setting>
-        <b:widget-setting name='link-1'>https://github.com/shirayukiproject/shirayuki_translation</b:widget-setting>
+        <b:widget-setting name='link-1'>https://github.com/shirayukiproject</b:widget-setting>
         <b:widget-setting name='text-0'>Discord</b:widget-setting>
-        <b:widget-setting name='link-0'>https://discord.link/Shirayuki</b:widget-setting>
+        <b:widget-setting name='link-0'>https://discord.gg/3JKbgVb</b:widget-setting>
       </b:widget-settings>
       <b:includable id='main'>
 
