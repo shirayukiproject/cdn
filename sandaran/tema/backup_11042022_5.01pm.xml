@@ -921,6 +921,7 @@ body#layout #aside {max-width: 340px}
 <b:with value='[&quot;Ecchi&quot;,&quot;Gore&quot;,&quot;Sexual Violence&quot;,&quot;Smut&quot;]' var='Content'>
 <b:with value='[&quot;TV&quot;, &quot;BD&quot;, &quot;OVA&quot;, &quot;ONA&quot;, &quot;Movie&quot;, &quot;Web Dl&quot;, &quot;Special&quot;]' var='Format'>
 <b:with value='[&quot;Tamat&quot;,&quot;Ongoing&quot;,&quot;Dropped&quot;,&quot;Stall&quot;,&quot;Belum Tayang&quot;,&quot;Completed&quot;]' var='Status'>
+<b:with value='[&quot;Jawi&quot;,&quot;Rumi&quot;,&quot;جاوي&quot;,&quot;رومي&quot;]' var='JawiRumi'>
 
 
 <main class='app-gg-20'>
@@ -945,7 +946,7 @@ body#layout #aside {max-width: 340px}
       <b:widget-setting name='backlinksLabel'/>
       <b:widget-setting name='showDateHeader'>false</b:widget-setting>
       <b:widget-setting name='style.textcolor'>#3577ff</b:widget-setting>
-      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
       <b:widget-setting name='style.urlcolor'>#663399</b:widget-setting>
       <b:widget-setting name='postLocationLabel'/>
       <b:widget-setting name='showAuthor'>false</b:widget-setting>
@@ -973,7 +974,7 @@ body#layout #aside {max-width: 340px}
 </b:includable>
     <b:includable id='DbEpisode'>
     <b:loop values='data:post.labels' var='label'>
-      <b:if cond='data:label.name not in data:Genre and data:label.name not in data:Genre2 and data:label.name not in data:Demographic and data:label.name not in data:Content and data:label.name not in data:Format and data:label.name not in data:Status'>
+      <b:if cond='data:label.name not in data:JawiRumi and data:label.name not in data:Genre and data:label.name not in data:Genre2 and data:label.name not in data:Demographic and data:label.name not in data:Content and data:label.name not in data:Format and data:label.name not in data:Status'>
       <a class='c-blue-c c-g800 c-114' expr:data='data:label.name' expr:href='data:post.url' rel='tag'>
         <data:label.name/>
       </a>
@@ -993,17 +994,26 @@ body#layout #aside {max-width: 340px}
     <b:includable id='DbGenre'>
         
       <b:loop index='i' values='data:post.labels' var='label'>
-          <b:if cond='data:label.name in data:Genre or data:label.name in data:Genre2 or data:label.name in data:Demographic or data:label.name in data:Content'>
+          <b:if cond='data:label.name not in data:JawiRumi and data:label.name in data:Genre or data:label.name in data:Genre2 or data:label.name in data:Demographic or data:label.name in data:Content'>
           <a class='c-g800 c-114' expr:href='data:label.url' rel='tag'>
             <data:label.name/>
           </a>
           </b:if>
         </b:loop>
     </b:includable>
+    <b:includable id='DbJawiRumi'>
+    <b:loop index='i' values='data:post.labels' var='label'>
+      <b:if cond='data:label.name in data:JawiRumi'>
+      <a expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
+      <data:label.name/>
+      </a>
+      </b:if>
+    </b:loop>
+    </b:includable>
     <b:includable id='DbMusim'>
     
     <b:loop index='i' values='data:post.labels' var='label'>
-      <b:if cond='data:label.name not in data:Genre and data:label.name not in data:Genre2 and data:label.name not in data:Demographic and data:label.name not in data:Content and data:label.name not in data:Format and data:label.name not in data:Status'>
+      <b:if cond='data:label.name not in data:JawiRumi and data:label.name not in data:Genre and data:label.name not in data:Genre2 and data:label.name not in data:Demographic and data:label.name not in data:Content and data:label.name not in data:Format and data:label.name not in data:Status'>
       <a class='c-g800 c-114' expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
       <data:label.name/>
       </a>
@@ -1398,13 +1408,14 @@ komik dari Jepang. Biasanya dibuka dari kiri ke kanan, dibacanya dari kanan atas
 komik dari Cina. Biasanya dibuka dari kanan ke kiri (seperti komik/buku di Indonesia pada umumnya) dan dibaca dari kiri atas ke kanan atas lalu kiri bawah ke kanan bawah. Pola bacanya seperti huruf Z. Biasanya cerita dari Manhua lebih berwarna. Entahlah mengapa. Mungkin karena pembuatnya sangat rajin atau punya banyak staff yang bisa memberikan warna.
           <b:elseif cond='data:view.search.label in [&quot;Manhwa&quot;]'/>
 komik dari Korea. Cara baca, cara membuka dan warnanya sama seperti Manhua. Contoh paling mudahnya adalah beberapa komik di Line Webtoon seperti Lookism, Dice.
-<b:elseif cond='data:view.search.label in [&quot;Jawi&quot;]'/>
-Kategori Jawi - Kategori yang dibawakan khas oleh Shirayuki Project yang mana terdapat terjemahan Melayu bertulisan Jawi antara salah satu episod ataupun sepenuhnya! Ayuh kita memartabatkan tulisan Jawi!
-&#8235;ايوه مرتبتکن توليسن جــــاوي!
+		  <b:elseif cond='data:view.search.label in [&quot;Jawi&quot;,&quot;جاوي&quot;]'/>
+Siri yang mempunyai sari kata bertulisan Jawi, sama ada satu atau semua episod. Dibawakan khas dari Projek Shirayuki
+		  <b:elseif cond='data:view.search.label in [&quot;Rumi&quot;,&quot;رومي&quot;]'/>
+Tulisan Rumi
 <b:elseif cond='data:view.search.label in [&quot;Winter 2020&quot;,&quot;Spring 2020&quot;,&quot;Summer 2020&quot;,&quot;Fall 2020&quot;,&quot;Winter 2021&quot;,&quot;Spring 2021&quot;,&quot;Summer 2021&quot;,&quot;Fall 2021&quot;,&quot;Winter 2022&quot;,&quot;Spring 2022&quot;,&quot;Summer 2022&quot;,&quot;Fall 2022&quot;]'/>
-Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/> lengkap dengan sinopsis.
+Muat turun <data:blog.pageName/> sub Melayu. Daftar Anime <data:blog.pageName/> lengkap dengan sinopsis.
         <b:else/>
-         Tidak ada deskripsi untuk katagori ini.
+         Tiada perincian untuk kategori ini	 :(
         </b:if>
       </b:if>
       </b:includable>
@@ -1834,7 +1845,11 @@ Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/
         <div class='fs-08 c-g800 c-114'><b:include name='DbGenre'/></div>
       </div>
         <div class='pb-15'>
-        <div class='fs-09 pb-5 c-159'>Oleh</div>
+        <div class='fs-09 pb-5 c-159'>Tulisan</div>
+        <div class='fs-08 c-g800 c-114'><b:include name='DbJawiRumi'/></div>
+      </div>
+        <div class='pb-15'>
+        <div class='fs-09 pb-5 c-159'>Dipos Oleh</div>
         <div class='fs-08 c-g800 c-114 flex item-center'><data:post.author.name/></div>
       </div>
         <div class='pb-15'>
@@ -1842,7 +1857,7 @@ Download anime <data:blog.pageName/> sub indo. Daftar Anime <data:blog.pageName/
         <div class='fs-08 c-g800 c-114'><data:post.date/></div>
       </div>
         <div class='pb-15'>
-        <div class='fs-09 pb-5 c-159'>Kemas kini akhir</div>
+        <div class='fs-09 pb-5 c-159'>Kemas Kini Terakhir</div>
         <div class='fs-08 c-g800 c-114'><data:post.lastUpdated.jsonEscaped/></div>
       </div>
       </div>
@@ -2404,6 +2419,7 @@ var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
 </b:section>
 </main>
 
+</b:with>
 </b:with>
 </b:with>
 </b:with>
