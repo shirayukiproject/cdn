@@ -1,0 +1,34 @@
+/*!************************************************
+* Nama      : sryk-utama
+* Versi 	: Yuki 5.0
+* Perincian	: Segala css yg ditambah Niskala untuk laman sesawaang PRJK SRYK
+* Website	: shirayukiproject.blogspot.com
+* Lain2     : Aku main ambil je kod.
+**************************************************/
+/* CSS Pasuan Jawi */
+@import url('https://rawcdn.githack.com/shirayukiproject/website/ed26b1d68e55eb7ba05777ae74af2b07a0109b84/js-css/PasuanJawi.css');
+
+/* Mula-Bar Kemajuan Siri */
+.skills {
+    text-align: left; /* Right-align text */
+    padding-top: 4px; /* Add top padding */
+    padding-bottom: 4px; /* Add bottom padding */
+    color: gray; /* White text color */
+    border-radius: 4px;
+}
+/* Tamat-Bar Kemajuan Siri */
+
+/* Logo Mod Gelap */
+.logo img { display: none; }
+.logo img.light { display: inline-block; }
+.dark .logo img { display: none; }
+.dark .logo img.dark { display: inline-block; }
+
+/* Menu Mod Gelap */
+.menu-rumijawi span { display: none; }
+.menu-rumijawi span.rumi { display: inline-block; }
+.dark .menu-rumijawi span { display: none; }
+.dark .menu-rumijawi span.jawi { display: inline-block; }
+
+/* Keluarga Fon */
+.jawi { font-family: Noto Kufi Arabic, Roboto; }
