@@ -6,7 +6,7 @@
 * Lain2     : Aku main ambil je kod.
 **************************************************/
 /* CSS Pasuan Jawi */
-@import url('https://rawcdn.githack.com/shirayukiproject/website/ed26b1d68e55eb7ba05777ae74af2b07a0109b84/js-css/PasuanJawi.css');
+@import url('https://cdn.jsdelivr.net/gh/shirayukiproject/website@main/js-css/PasuanJawi.css');
 
 /* Mula-Bar Kemajuan Siri */
 .skills {
