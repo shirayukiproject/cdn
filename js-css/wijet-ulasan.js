@@ -62,7 +62,7 @@ var recentCmts = (function(){
                 '</a>'+
                 '<div class="wjs-cmts__data">'+
                    '<h3 class="wjs-cmts__title"><a href="' + url + '">' + authorName + '</a><span class="wjs-cmts__date">' + published + '</span></h3>'+
-                   '<p class="wjs-cmts__snippet jawi-bnassim">' + snippet + '</p>'+
+                   '<p class="wjs-cmts__snippet">' + snippet + '</p>'+
                 '</div>'+
              '</div>'+
           '</div>'

@@ -32,7 +32,6 @@
 
 /* Keluarga Fon */
 .jawi { font-family: Noto Kufi Arabic, Roboto; }
-.jawi-bnassim { font-family: NKL Bahij Nassim, Roboto;}
 
 /*
  * wjs-recentComments v1.1.0
@@ -100,6 +99,7 @@
 /* Kandungan Gelap */
 .wjs-cmts__snippet {
     color: #647380;
+    font-family: Noto Kufi Arabic, Roboto;
 }
 .wjs-cmts__title {
     font-size: 1em;
