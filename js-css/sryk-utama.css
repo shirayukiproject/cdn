@@ -78,10 +78,28 @@
     border-radius: 50%;
     box-shadow: 0 2px 3px rgba(0,21,64,.2), 0 2px 5px rgba(0,21,64,.05);
 }
-/* Contenido
+/* Kandungan
 -----------------------------------------*/
 .wjs-cmts__snippet {
     color: #37474F;
+}
+.wjs-cmts__title {
+    font-size: 1em;
+    margin-bottom: .25em;
+}
+.wjs-cmts__title a {
+    color: #263238;
+    margin-right: .5em;
+    font-weight: 500;
+}
+.wjs-cmts__date {
+    color: #B0BEC5;
+    margin-bottom: .5em;
+    font-size: .9em;
+}
+/* Kandungan Gelap */
+.wjs-cmts__snippet {
+    color: #647380;
 }
 .wjs-cmts__title {
     font-size: 1em;
