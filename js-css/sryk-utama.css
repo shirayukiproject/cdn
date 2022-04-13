@@ -6,7 +6,7 @@
 * Lain2     : Aku main ambil je kod.
 **************************************************/
 /* CSS Pasuan Jawi */
-@import url('https://cdn.jsdelivr.net/gh/shirayukiproject/website@main/js-css/PasuanJawi.css');
+@import url('https://cdn.jsdelivr.net/gh/shirayukiproject/website@latest/js-css/PasuanJawi.css');
 
 /* Mula-Bar Kemajuan Siri */
 .skills {
@@ -32,6 +32,7 @@
 
 /* Keluarga Fon */
 .jawi { font-family: Noto Kufi Arabic, Roboto; }
+.jawi-bnassim { font-family: NKL Bahij Nassim, Roboto; }
 
 /*
  * wjs-recentComments v1.1.0
@@ -97,21 +98,20 @@
     font-size: .9em;
 }
 /* Kandungan Gelap */
-.wjs-cmts__snippet {
-    color: #647380;
-    font-family: Noto Kufi Arabic, Roboto;
+.dark .wjs-cmts__snippet {
+    color: #adc0d2;
 }
-.wjs-cmts__title {
+.dark .wjs-cmts__title {
     font-size: 1em;
     margin-bottom: .25em;
 }
-.wjs-cmts__title a {
-    color: #263238;
+.dark .wjs-cmts__title a {
+    color: #adc0d2;
     margin-right: .5em;
     font-weight: 500;
 }
-.wjs-cmts__date {
-    color: #B0BEC5;
+.dark .wjs-cmts__date {
+    color: #263238;
     margin-bottom: .5em;
     font-size: .9em;
 }
