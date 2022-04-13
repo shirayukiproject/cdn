@@ -6,112 +6,123 @@
 * Lain2     : Aku main ambil je kod.
 **************************************************/
 /* CSS Pasuan Jawi */
-@import url('https://cdn.jsdelivr.net/gh/shirayukiproject/website@latest/js-css/PasuanJawi.css');
-
+@import url('//cdn.jsdelivr.net/gh/shirayukiproject/website@latest/js-css/PasuanJawi.css');
 /* Mula-Bar Kemajuan Siri */
 .skills {
-    text-align: left; /* Right-align text */
-    padding-top: 4px; /* Add top padding */
-    padding-bottom: 4px; /* Add bottom padding */
-    color: gray; /* White text color */
-    border-radius: 4px;
+text-align: left; /* Right-align text */
+padding-top: 4px; /* Add top padding */
+padding-bottom: 4px; /* Add bottom padding */
+color: gray; /* White text color */
+border-radius: 4px;
 }
 /* Tamat-Bar Kemajuan Siri */
-
 /* Logo Mod Gelap */
 .logo img { display: none; }
 .logo img.light { display: inline-block; }
 .dark .logo img { display: none; }
 .dark .logo img.dark { display: inline-block; }
-
 /* Menu Mod Gelap */
 .menu-rumijawi span { display: none; }
 .menu-rumijawi span.rumi { display: inline-block; }
 .dark .menu-rumijawi span { display: none; }
 .dark .menu-rumijawi span.jawi { display: inline-block; }
-
 /* Keluarga Fon */
 .jawi { font-family: Noto Kufi Arabic, Roboto; }
 .jawi-bnassim { font-family: NKL Bahij Nassim, Roboto; }
-
 /*
- * wjs-recentComments v1.1.0
- * Copyright 2019 zkreations
- * Developed by José Gregorio (fb.com/JGMateran) | Daniel Abel M. (fb.com/danieI.abel)
- * Licensed under GNU (github.com/zkreations/wjs-recentComments/blob/master/LICENSE)
- */
- .wjs-cmts__card-content {
-    font-size: 14px;
-    display: flex;
+* wjs-recentComments v1.1.0
+* Copyright 2019 zkreations
+* Developed by José Gregorio (fb.com/JGMateran) | Daniel Abel M. (fb.com/danieI.abel)
+* Licensed under GNU (github.com/zkreations/wjs-recentComments/blob/master/LICENSE)
+*/
+.wjs-cmts__card-content {
+font-size: 14px;
+display: flex;
 }
 .wjs-cmts__data {
-    line-height: 1.4;
+ line-height: 1.4;
 }
 .wjs-cmts__image {
-    flex: 0 0 auto;
-    transform: translateY(0);
-    transition: transform .3s;
+ flex: 0 0 auto;
+transform: translateY(0);
+transition: transform .3s;
 }
 .wjs-cmts__card-content:hover .wjs-cmts__image {
-    transform: translateY(-.25em);
-}
-
-/*
+ transform: translateY(-.25em);
+ }
+ /*
 => Personalizacion
-*/
-
-/* Cuerpo
+ */
+/* Kad
 -----------------------------------------*/
-.wjs-cmts__card-content {
-    padding: 1.5em;
-    margin-bottom: .5em;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 2px 20px rgba(0,21,64,.05);
+ .wjs-cmts__card-content {
+ padding: 1.5em;
+ margin-bottom: .5em;
+border-radius: 5px;
+box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 2px 20px rgba(0,21,64,.05);
 }
 /* Avatar
 -----------------------------------------*/
 .wjs-cmts__image {
-    margin-right: 1em;
-}
-.wjs-cmts__image img {
-    width: 45px;
-    border-radius: 50%;
-    box-shadow: 0 2px 3px rgba(0,21,64,.2), 0 2px 5px rgba(0,21,64,.05);
+margin-right: 1em;
+ }
+ .wjs-cmts__image img {
+ width: 45px;
+border-radius: 50%;
+box-shadow: 0 2px 3px rgba(0,21,64,.2), 0 2px 5px rgba(0,21,64,.05);
 }
 /* Kandungan
 -----------------------------------------*/
 .wjs-cmts__snippet {
-    color: #37474F;
+color: #37474F;
 }
 .wjs-cmts__title {
-    font-size: 1em;
-    margin-bottom: .25em;
+font-size: 1em;
+margin-bottom: .25em;
 }
 .wjs-cmts__title a {
-    color: #263238;
-    margin-right: .5em;
-    font-weight: 500;
+color: #263238;
+margin-right: .5em;
+font-weight: 500;
 }
 .wjs-cmts__date {
-    color: #B0BEC5;
-    margin-bottom: .5em;
-    font-size: .9em;
+color: #B0BEC5;
+margin-bottom: .5em;
+font-size: .9em;
+}
+/* Kad Gelap
+-----------------------------------------*/
+.dark .wjs-cmts__card-content {
+padding: 1.5em;
+margin-bottom: .5em;
+border-radius: 5px;
+box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 2px 20px rgba(0,21,64,.05);
+}
+/* Avatar Gelap
+-----------------------------------------*/
+.dark .wjs-cmts__image {
+margin-right: 1em;
+}
+.dark .wjs-cmts__image img {
+width: 45px;
+border-radius: 50%;
+box-shadow: 0 2px 3px rgba(0,21,64,.2), 0 2px 5px rgba(0,21,64,.05);
 }
 /* Kandungan Gelap */
 .dark .wjs-cmts__snippet {
-    color: #adc0d2;
+color: #adc0d2;
 }
 .dark .wjs-cmts__title {
-    font-size: 1em;
-    margin-bottom: .25em;
+font-size: 1em;
+margin-bottom: .25em;
 }
 .dark .wjs-cmts__title a {
-    color: #adc0d2;
-    margin-right: .5em;
-    font-weight: 500;
+color: #adc0d2;
+margin-right: .5em;
+font-weight: 500;
 }
 .dark .wjs-cmts__date {
-    color: #263238;
-    margin-bottom: .5em;
-    font-size: .9em;
+color: rgb(78, 103, 114);
+margin-bottom: .5em;
+font-size: .9em;
 }

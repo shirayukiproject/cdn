@@ -55,7 +55,7 @@ var recentCmts = (function(){
           }
        );
        return (
-          '<div class="wjs-cmts__card">'+
+          '<div class="wjs-cmts__card jawi">'+
              '<div class="wjs-cmts__card-content">'+
                 '<a href="' + url + '" class="wjs-cmts__image">'+
                    '<img src="' + authorImage + '" alt="' + authorName + '" />'+
