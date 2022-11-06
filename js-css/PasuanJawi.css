@@ -1,14 +1,22 @@
-/* Noto Kufi Arabic, Diubah Suai Untuk Jawi, Tambah Nya ڽ awalan dan tengah. Tambah hamza tiga suku uni0674 */
+/* Noto Kufi Arabic, Diubah Suai Untuk Jawi, Tambah hamza tiga suku uni0674 dan uni088F */
 @font-face {
-  font-family: 'Noto Kufi Arabic';
+  font-family: "Noto Kufi Arabic";
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/projeksyirayuki/sesawang@main/pasuan/NotoKufiArabic-Regular.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/projeksyirayuki/sesawang@main/pasuan/NotoKufiArabic.woff2) format('woff2');
   unicode-range: unicode-range: U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+10E60-10E7F,U+1EC70-1ECBF,U+1ED00-1ED4F,U+1EE00-1EEFF;
 }
+@font-face {
+  font-family: "Noto Kufi Arabic";
+  font-display: swap;
+  font-weight: bold;
+  src: url(https://cdn.jsdelivr.net/gh/projeksyirayuki/sesawang@main/pasuan/NotoKufiArabic-Bold.woff2) format('woff2');
+  unicode-range: unicode-range: U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+10E60-10E7F,U+1EC70-1ECBF,U+1ED00-1ED4F,U+1EE00-1EEFF;
+}
+
 /* Bahij Nassim, Diubah Suai Untuk Jawi */
 @font-face {
   font-family: 'NKL Bahij Nassim';
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/niskala5570/pasuanjawi@2.872/v2.727(usang)/Bahij%20Nassim/NKL-BahijNassim.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/niskala5570/pasuanjawi@2.872/v2.727%20(Jawi%20Sahaja)/Bahij%20Nassim/NKL-BahijNassim.woff2) format('woff2');
   unicode-range: unicode-range: U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+10E60-10E7F,U+1EC70-1ECBF,U+1ED00-1ED4F,U+1EE00-1EEFF;
 }
