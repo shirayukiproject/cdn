@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
+    <title>Syirayuki 🦊 شيرايوکي</title>
       <script src='https://code.jquery.com/jquery-3.6.0.min.js'/>
     <!-- Meta Umum -->
 	<meta expr:charset='data:blog.encoding'/>
@@ -217,7 +218,7 @@ input{accent-color:$(keycolor);}
 [tabindex="-1"]:focus:not(:focus-visible){outline:0!important;}
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;}
 ul ul{margin-bottom:0;}
-a{color:#a885da;text-decoration:none;background-color:transparent;transition:all .15s;}
+a{color:var(--primary);text-decoration:none;background-color:transparent;transition:all .15s;}
 a:not([href]):not([class]){color:inherit;text-decoration:none;}
 a:not([href]):not([class]):hover{color:inherit;text-decoration:none;}
 button{border-radius:0;border:none;background:transparent;}
@@ -377,7 +378,7 @@ header .socials>div{display:inline-block;vertical-align:middle;}
 header .socials>a{font-size:3rem;display:inline-block;vertical-align:middle;line-height:1em;color:#d5d5d5;margin-inline-end:10px;}
 header .socials>a:hover{color:#ccc;}
 @media screen and (max-width:1279px){header #search{width:320px;}}
-@media screen and (max-width:992px){header .socials svg{width: 25px;height: 25px;}.header-image-wrapper img {max-height: 30px;}header #logo {display: flex;align-items: center;}}
+@media screen and (max-width:992px){header .socials svg{width: 25px;height: 25px;}.header-image-wrapper img {max-height: 40px;}header #logo {display: flex;align-items: center;}}
 @media screen and (max-width:768px){header #user{display:flex;}header #user .guest .btn{padding:0;width:35px;height:35px;line-height:35px;border-radius:50%;max-width:auto;min-width:auto;}header #user .guest .btn:after{font-family:"Font Awesome 5 Free";content:"i";font-weight:900;}header #user .guest .btn span{font-size:0;}header #user .user{min-width:auto;width:35px;height:35px;text-overflow:unset;line-height:35px;padding:0;}header #user .user span{font-size:0;display:none;}header #user .user:after{font-family:"Font Awesome 5 Free";content:"";font-weight:900;}}
 @media screen and (max-width:576px){header #search-toggler{font-size:1.7em;display:inline-block;margin-right:10px;margin-top:3px;}header #search{position:absolute;left:0;top:100%;z-index:10;width:100%;display:none;margin-top:10px;}header #search form{margin:0 15px;width:auto;}header #search form input{background:var(--dark);color:#fff;}header #search form input::placeholder{color:#ababab;}header #search form input:focus,header #search form input:hover{background:#5a2e98;color:#fff;}header #search form button{color:#fff!important;}header #menu{position:static;}header #menu .menu{left:15px;right:15px;top:100%;z-index:10;}header #menu .menu>ul{width:100%;border-radius:.3rem;overflow:hidden;}header #menu .menu>ul>li:after,header #menu .menu>ul>li:before{display:none!important;}header #menu .menu>ul>li>a{line-height:45px;height:45px;border-bottom:1px solid #4e2884;}header #menu .menu>ul>li>ul{position:static;left:0;width:auto;font-size:1.06em;display:none;width:100%!important;padding:5px 0;}header #menu .menu>ul>li>ul>li a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 15px;}}
 .search .suggestions{position:absolute;top:100%;width:100%;margin-top:5px;z-index:10;background:var(--secondary);border-radius:10px;overflow:hidden;box-shadow:0 2px 10px var(--secondary);display:none;}
@@ -402,7 +403,6 @@ input[type=radio]:not(.simple):checked:before{content:"";background:#fff;positio
 @keyframes kfloading{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);transform:scale(1);}}
 #md-request .suggestions{background:0 0;position:static;box-shadow:none;}
 #md-request .suggestions a{background:0 0;padding:0;}
-.dark {background-color: black;color: white;}
 .sun {transition: all 350ms cubic-bezier(0.215,0.61,0.355,1);cursor: pointer;}
 .sun:hover {transform: rotate(-40deg);}
 .Blog input[id*="check1"]:checked ~ .post-outer-container{font-size:14px}
@@ -421,7 +421,7 @@ a:hover {color: var(--link-hover);}
 .ofc img {object-fit: cover}
 .wsn {white-space: nowrap}
 .opc img {object-position: center}
-.i-block,#main h3.title {display: inline-block}
+.i-block,#main h3.title /*{display: inline-block}*/ /* Tukar ke display: inline-block untuk semula asal */
 .z-1 {z-index: 1}
 .z-10 {z-index: 10}
 .z-20 {z-index: 20}
@@ -1342,13 +1342,14 @@ rt#jawi {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #0b1622 url('https://gist.githubusercontent.com/condensed-io/d4da34ecfdeda137ad4787fbd244ed27/raw/b96d939e9baf98ff79394c11af83c10a6acdd241/pac.svg') no-repeat center center;
+  background: #0b1622 url('https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/refs/heads/master/svg-loaders/oval.svg') no-repeat center center;
   transition: opacity 0.4s ease; /* Add transition for smooth fade-out */
 }
 
 .preloader.hide {
   opacity: 0; /* Hide the preloader by reducing opacity */
 }
+
  ]]></b:skin>
   <b:template-skin>
     <![CDATA[ 
@@ -1564,9 +1565,9 @@ body#layout:after{content:'Designed by - EmissionHex';display:block;font-family:
           </b:includable>
       <b:includable id='relatedPost'>
         <div class='head mt-8'>
-<h3 class='title'>
+<!-- <h3 class='title'>
 Recomendation
-</h3>
+</h3>-->
 
 </div>
         <ul class='grid gtc-raf g-var lsn p-0' id='output'/>
@@ -1910,11 +1911,16 @@ document.addEventListener("DOMContentLoaded", function() {
                     elemen.classList.add("fade-in");
                 });
             }
+
+            let iframe = document.getElementById("naotiFrame");
+            if (iframe) {
+                let langParam = bahasa === "ms-Arab" ? "ms_Arab" : "ms";
+                iframe.src = `https://panel.naoti.me/embed?id=696347210073243668#accent=blue&lang=${langParam}&dark=true`;
+            }
             
             console.log("Bahasa ditukar kepada:", bahasa);
         }, animasi ? 300 : 0);
     }
-
     function kemaskiniGambar() {
         let bahasa = dapatkanCookie("lang") || "ms";
         if ("undefined" == typeof gambarJawi || "undefined" == typeof gambarRumi) {
@@ -2033,13 +2039,35 @@ document.addEventListener("DOMContentLoaded", function() {
 <script type='text/javascript'>/*<![CDATA[*/
   "use strict";class BloggerScript{constructor(a={}){this.config=a,this._siteMap={arr:new Array,callback:"undefined",fc:"function",max:150,start:1,url:"url"}}siteMap(b,c=function(a){console.log(a)}){let a=this;a.xhr("GET",`${b}?alt=json-in-script&start-index=${a._siteMap.start}&max-results=${a._siteMap.max}`,function(d){if("entry"in d.feed){let e=d.feed.entry;Array.prototype.push.apply(a._siteMap.arr,a.getFeed(d)),e.length>=a._siteMap.max?(a._siteMap.start+=a._siteMap.max,a.siteMap(b,c)):c(a._siteMap.arr)}else c(a._siteMap.arr)})}getFeed(a){if(a.feed.entry){let b=new Array;return a.feed.entry.forEach(a=>{let c={};c.title=a.title.$t,c.link=this.getLink(a.link),c.image=this.getImage(a),c.label=this.getLabel(a.category),c.date=this.getTime(a.published.$t),c.published=a.published.$t,c.updated=a.updated.$t,"summary"in a&&(c.summary=a.summary.$t),"content"in a&&(c.content=a.content.$t),"author"in a&&(c.author=this.getAuthor(a)),b.push(c)}),b}return[]}getImage(a){if("media$thumbnail"in a)return this.resizeImage(a.media$thumbnail.url);if(!("content"in a))return this.config.noImage||"";{let b=a.content.$t,d=b.indexOf("<img"),c=b.indexOf('src="',d),e=b.indexOf('"',c+5),f=b.substr(c+5,e-c-5);return -1!=d&& -1!=c&& -1!=e&&""!=f?f:this.config.noImage||""}}getAuthor(a){var b,c,d,e,f,g;return{name:(null===(b=a.author[0])|| void 0===b?void 0:null===(c=b.name)|| void 0===c?void 0:c.$t)||"",link:(null===(d=a.author[0])|| void 0===d?void 0:null===(e=d.uri)|| void 0===e?void 0:e.$t)||"",image:(null===(f=a.author[0])|| void 0===f?void 0:null===(g=f.gd$image)|| void 0===g?void 0:g.src)||""}}getLink(a){return a.find(a=>"alternate"==a.rel).href}getLabel(a){return a.map(a=>a.term)}getTime(c){if(/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/.test(c)){var b=c,d=b.substring(0,4),e=b.substring(5,7),f=b.substring(8,10),a=new Array;return a[1]="Jan",a[2]="Feb",a[3]="Mar",a[4]="Apr",a[5]="May",a[6]="Jun",a[7]="Jul",a[8]="Aug",a[9]="Sep",a[10]="Oct",a[11]="Nov",a[12]="Dec",f+" "+a[parseInt(e,10)]+" "+d}return!1}resizeImage(a){return this.config.sizeImage?a.match(/\/s[0-9]{2}-(w[0-9]+-)?c/)?a.replace(/\/s[0-9]{2}-(w[0-9]+-)?c/,`/${this.config.sizeImage}`):a.replace(/\=s[0-9]{2}-(w[0-9]+-)?c/,`=${this.config.sizeImage}`):a}relatedPost(b=function(a){console.log(a)}){let a=this,c=0,d=new Array,e=document.location.pathname;"undefined"!=a.config.label&&""!=a.config.label&&0!=a.config.label.length&&a.config.label.forEach(f=>{a.xhr("GET",`/feeds/posts/default/-/${f.replace(/\&amp;/g,"&").replace(/\//g,"%2F")}?alt=json-in-script&max-results=${a.config.jumlah}`,function(g){if("entry"in g.feed&&a.getFeed(g).forEach(a=>{!a.link.includes(e)&&(d.some(b=>b.link==a.link)||d.push(a))}),++c==a.config.label.length){if(0==d.length)return!1;let f=a.shuffle(d);return f.length>a.config.jumlah&&(f=f.slice(0,a.config.jumlah)),b(f)}})})}randomPost(b,c=function(a){console.log(a)}){let a=this,d=a.config.jumlah;a.xhr("GET",`${b}?alt=json-in-script&max-results=0`,function(f){let e=f.feed.openSearch$totalResults.$t;if(a.config.allRandom)e=e<=150?1:a.shuffle2(1,e-150),d=150;else{if(e<a.config.jumlah)return;e=a.shuffle2(1,e-a.config.jumlah)}a.xhr("GET",`${b}?alt=json-in-script&start-index=${e}&max-results=${d}`,function(b){if("entry"in b.feed){let d=a.getFeed(b);return c(d=a.shuffle(d))}})})}shuffle(a){var c,d,b=a.length;if(0===b)return!1;for(;--b;)c=Math.floor(Math.random()*(b+1)),d=a[b],a[b]=a[c],a[c]=d;return a}shuffle2(a,b){return Math.floor(Math.random()*(b-a))+a}xhr(b,c,d){let a=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP");a.onreadystatechange=function(){if(4==this.readyState&&200==this.status||304==this.status){let a=this.responseText,b=JSON.parse(a.substring(a.indexOf("{"),a.lastIndexOf("}")+1));d&&d(b)}},a.onerror=a=>console.log(a),a.open(b,c,!0),a.send()}inTag(b){let a=document.createElement("script");a.src=b,document.body.appendChild(a)}}
 /*]]>*/</script>
-  
+    <script type='text/javascript'>/*<![CDATA[*/
+    /**
+    * Resize iframe naoTimes ketika sudah load.
+    */
+    window.addEventListener("message", function (event) {
+        // Periksa apakah pesan dari embed naotimes apa tidak
+        if (!event.origin.startsWith("https://panel.naoti.me")) {
+            return;
+        }
+
+        // Parse data yang dikirim oleh Embed
+        const data = JSON.parse(event.data);
+        // Ambil element iframe via `id`
+        const iframe = document.getElementById("naotiFrame");
+        if (data.action === "resize") {
+            iframe.height = data.height;
+            iframe.scrolling = "no";
+            iframe.style.opacity = "1";
+            // Hilangkan scrollbar
+            iframe.style.overflowY = "hidden";
+        }
+    }, false);
+/*]]>*/</script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js'/> 
-   <script>
+<!--   <script>
   if (localStorage.getItem(&#39;isDark&#39;)) {
     document.documentElement.classList.add(&#39;sfw&#39;)
   }
-</script>
+</script> -->
 
   &lt;!--</head>--&gt;&lt;/head&gt;
   <body class='break-word'>
@@ -2223,7 +2251,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <b:attr name='role' value='search'/>
         <div class='cari-isi'>
   <form action='/search'>
-    <input aria-label='Cari blog ini' autocomplete='off' class='cari-input' name='q' oninput='this.setCustomValidity(&apos;&apos;)' oninvalid='this.setCustomValidity(&apos;Ketik kata kunci pencarian&apos;)' placeholder='Cari ceritera (Perlu ke?)' required='required' type='text'/>
+    <input aria-label='Cari blog ini' autocomplete='off' class='cari-input' name='q' oninput='this.setCustomValidity(&apos;&apos;)' oninvalid='this.setCustomValidity(&apos;Serius, tak ada&apos;)' placeholder='Cari ceritera (Tapawsub lagi banyak ( ◜ᗜ◝) )' required='required' type='text'/>
     <label aria-label='Cari' class='cari-ikon a f' for='cari'>
       <svg viewBox='0 0 24 24'>
         <circle cx='11.7666' cy='11.7666' r='8.98856'/>
@@ -3210,6 +3238,19 @@ However, they were falsely accused of becoming the next Demon Lords because of h
       <b:class cond='data:skin.vars.body_background.image' name='has-image'/>
       <b:tag cond='data:view.isMultipleItems or data:view.isPost' id='sidebar' name='div'>
       <b:section cond='data:view.isPost' id='sidebar-post' showaddelement='true'>
+        <b:widget id='HTML13' locked='false' title='' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div class="" style="padding-top: 20px;" data-metatip="true">
+<iframe id="naotiFrame" src ="https://panel.naoti.me/embed?id=696347210073243668#accent=blue&lang=ms&dark=true" frameborder="0" width="100%" height="100%"> </iframe>
+</div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
         <b:widget id='HTML5' locked='false' title='Movie' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'><![CDATA[<ul id="rSI" class="lsn m-0 p-0 grid gtc-r2a">
@@ -3683,10 +3724,10 @@ However, they were falsely accused of becoming the next Demon Lords because of h
         </b:widget>
       </b:section>
       <b:section cond='data:view.isHomepage' id='sidebar-home' showaddelement='true'>
-        <b:widget id='HTML12' locked='false' title='' type='HTML' visible='true'>
+        <b:widget id='HTML12' locked='false' title='Kemajuan' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'><![CDATA[<div class="bg-100 c-g600 bc-213 r4 p-20 fs-09 lh-2 box-3 bsn laman"" style="padding-top: 20px;" data-metatip="true">
-<iframe id="myIframe" src ="https://panel.naoti.me/embed?id=696347210073243668#accent=blue&lang=ms" frameborder="0" width="100%"> </iframe>
+<iframe id="naotiFrame" src ="https://panel.naoti.me/embed?id=696347210073243668#accent=blue&lang=ms&dark=true" frameborder="0" width="100%"> </iframe>
 </div>]]></b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -5324,7 +5365,8 @@ max-height: 0;overflow: hidden;transition: max-height .2s;}
                   <div class='rating'>
                     <b:include name='ratingProgress'/>
                   </div>
-                  <h1 class='title' expr:title='data:post.title' itemprop='name'><data:post.title/></h1>
+                  <!-- ni tajuk utama <h1 class='title' expr:title='data:post.title' itemprop='name'><data:post.title/></h1>-->
+				  <h3 class='title alt-t' dir='auto' i18n='tajuk'/>
                   <p class='alias m-0'><data:blog.metaDescription/></p>
                   <div class='shorting' id='syn-target'/>
                   <div class='meta' id='extra-target'>                  
@@ -5575,11 +5617,13 @@ max-height: 0;overflow: hidden;transition: max-height .2s;}
 <ol>
     <li><strong class='rule'>UMUM</strong>
         <p><strong class='definition'>Patuhi terma dan syarat Blogger/Disqus</strong></p>
-        <p>&quot;&quot;</p>
-        <p><strong class='definition'>Beradab dan elakkan pertelingkahan</strong></p>
-        <p>&quot;Sila bawa drama kau orang ke tempat lain&quot;</p>
+        <p>&quot;Guna platform orang, kita kena beradab.&quot;</p>
+        <p><strong class='definition'>Elakkan pertelingkahan.</strong></p>
+        <p>&quot;Sila bawa drama kau orang ke tempat lain. Sini nak borak anime.&quot;</p>
     </li>
     <li><strong class='rule'>DILARANG</strong>
+        <p><strong class='definition'>Bahasa kasar.</strong></p>
+        <p>Budi bahasa budaya kita.</p>
         <p><strong class='definition'>Mengirim Kandungan Lucah (NSFW)</strong></p>
         <p>Aturan ini adalah muktamad dan dilarang keras</p>
     </li>
@@ -5663,7 +5707,7 @@ max-height: 0;overflow: hidden;transition: max-height .2s;}
               <div class='flex jcsb'>
                 <h3>Ulasan</h3>
                 <div class='tabs'>
-                <span class='tablinks' id='defaultOpen' onclick='openTab(event, &apos;comment&apos;)'>Ulasan <b:if cond='data:post.numberOfComments &gt; 0'><data:post.numberOfComments/></b:if></span>
+                <span class='tablinks' id='defaultOpen' onclick='openTab(event, &apos;comment&apos;)'>Blogger<b:if cond='data:post.numberOfComments &gt; 0'><data:post.numberOfComments/></b:if></span>
                 <span class='tablinks' onclick='openTab(event, &apos;disqus_thread&apos;)'>Disqus</span>
 				<span class='tablinks' onclick='openTab(event, &apos;rule&apos;)'>Peraturan</span>
                 </div>
@@ -6413,7 +6457,7 @@ align-items: center;
       <b:include cond='data:imagePlacement != &quot;REPLACE&quot;' name='description'/>
     </div>
     <b:include cond='data:imagePlacement == &quot;BEHIND&quot;' name='behindImageStyle'/>
-          <div class='copyright'>Hak Cipta &#169; Terpelihara <script>document.write(new Date().getFullYear())</script> <data:blog.title/>.
+          <div class='copyright'>&#169; Hak Cipta Terpelihara Seputih Salji <script>document.write(new Date().getFullYear())</script>.
           	<div class='disclaim'>Tema gempak oleh <a href='https://emissionhex.blogspot.com/' target='_blank'>Wernayasa@EmissionHex</a></div>
           </div>
           <div class='socials'>
